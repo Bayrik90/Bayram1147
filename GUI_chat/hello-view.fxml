@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="250" spacing="18.0" style="-fx-background-color: #0000CD;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_chat.HelloController">
+   <children>
+      <TextArea fx:id="textArea" blendMode="HARD_LIGHT" editable="false" maxHeight="1.7976931348623157E308" prefHeight="255.0" prefWidth="124.0" style="-fx-background-color: #000080;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="1.7" specularConstant="1.16" specularExponent="22.33" surfaceScale="2.43">
+               <light>
+                  <Light.Distant azimuth="174.77" elevation="57.56">
+                     <color>
+                        <Color red="0.15299999713897705" green="0.5799406170845032" blue="0.8999999761581421" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets top="-2.0" />
+         </padding></TextArea>
+      <HBox prefHeight="14.0" prefWidth="250">
+         <children>
+            <TextField fx:id="textField" onAction="#handlerSend" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #87CEFA;" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handlerSend" prefHeight="31.0" prefWidth="77.0" text="Отправить">
+               <font>
+                  <Font name="Georgia Bold" size="10.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>
